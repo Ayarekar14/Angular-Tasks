@@ -1,0 +1,11 @@
+<h1>Parent Component</h1>
+<hr>
+
+<input type="text" value="{{name}}" (input)="textInput($event)"><button (click)="showText()">Submit</button>
+<br>
+{{name}}
+
+<hr>
+
+<h1>Child Component</h1>
+<app-child [name]="name" (message)="readData($event)"></app-child>

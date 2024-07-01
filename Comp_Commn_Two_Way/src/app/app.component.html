@@ -1,0 +1,10 @@
+<h1>Parent Component</h1>
+<hr>
+
+<input type="text" [(ngModel)]="txtName" placeholder="Enter name"> <button (click)="sendData()">send</button>
+
+<br><br><br>
+
+<h1>Child Component</h1>
+<hr>
+<app-child [childName]="name" (name)="receiveData($event)"></app-child>
